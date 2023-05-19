@@ -1,0 +1,29 @@
+.footerPage {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 110px;
+  background-color: gray;
+  clear: both;
+  position: relative;
+  margin-top: -110px
+}
+
+
+.footerIcons {
+  height: 55px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.icon {
+  min-width: 40px;
+  margin: 10px;
+}
+
+.lowTab {
+  text-align: center;
+  padding-top: 10px;
+  width: 100%;
+}

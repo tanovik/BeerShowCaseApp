@@ -1,0 +1,107 @@
+.paginator {
+  width: 40%;
+  max-width: 550px;
+  margin: 10px auto;
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  padding: 10px;
+}
+
+.page_numbers {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.pageNumber {
+  padding: 10px 14px;
+  font-family: "BebasKai";
+  font-size: 20px;
+  font-weight: 400;
+  height: 40px;
+  width: 40px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 10px;
+
+}
+
+.pageNumber:hover {
+
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.paginator button {
+  width: 40px;
+  min-width: 40px;
+
+}
+
+.paginator .selectedPage {
+  color: white;
+  background-color: rgb(175, 174, 174);
+}
+
+@media screen and (max-width: 600px) {
+  .paginator {
+    width: 50%;
+    max-width: 400px;
+    margin: 10px 20px;
+  }
+
+
+}
+
+@media screen and (max-width: 450px) {
+
+
+
+  .pageNumber {
+    padding: 6px 10px;
+    font-size: 18px;
+    height: 30px;
+    width: 30px;
+    margin-left: 8px;
+
+  }
+
+  .paginator button {
+    width: 30px;
+    min-width: 30px;
+    height: 30px;
+    padding: 3px;
+    margin: 0 5px;
+
+  }
+
+}
+
+@media screen and (max-width: 350px) {
+  .paginator {
+    width: 40%;
+    max-width: 330px;
+    margin: 10px;
+  }
+
+
+  .pageNumber {
+    padding: 6px 8px;
+    font-size: 16px;
+    height: 30px;
+    width: 30px;
+    margin-left: 7px;
+
+  }
+
+  .paginator button {
+    width: 26px;
+    min-width: 26px;
+    height: 26px;
+    padding: 2px;
+    margin: 0 3px;
+
+  }
+
+}

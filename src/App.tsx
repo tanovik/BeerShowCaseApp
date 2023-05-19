@@ -1,56 +1,36 @@
-import React from 'react';
-import logo from './logo.svg';
-import { Counter } from './features/counter/Counter';
+import { useEffect } from 'react';
 import './App.css';
+import SearchPage from "./features/components/Pages/SearchPage/SearchPage";
+import BeersPage from "./features/components/Pages/BeersPage/BeersPage";
+import HomePage from "./features/components/Pages/HomePage/HomePage";
+import Header from "./features/components/Header/Header";
+import Footer from "./features/components/Footer/Footer";
+import FavouritePage from "./features/components/Pages/FavouritePage/FavouritePage";
+import BeerCardPage from "./features/components/Pages/BeerCardPage/BeerCardPage";
+import NotFound from "./features/components/Pages/NotFoundPage/NotFound";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { useAppDispatch } from './app/hooks';
+import { getBeerList } from "./features/beerSlice";
 
 function App() {
+  const dispatch = useAppDispatch();
+  useEffect(() => {
+    dispatch(getBeerList("", 1));
+  }, []);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <Counter />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <span>
-          <span>Learn </span>
-          <a
-            className="App-link"
-            href="https://reactjs.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            React
-          </a>
-          <span>, </span>
-          <a
-            className="App-link"
-            href="https://redux.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Redux
-          </a>
-          <span>, </span>
-          <a
-            className="App-link"
-            href="https://redux-toolkit.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Redux Toolkit
-          </a>
-          ,<span> and </span>
-          <a
-            className="App-link"
-            href="https://react-redux.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            React Redux
-          </a>
-        </span>
-      </header>
+    <div >
+      <BrowserRouter >
+        <Header />
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/beers" element={<BeersPage />} />
+          <Route path="/beercard/:beerId?" element={<BeerCardPage />} />
+          <Route path="/favourites" element={<FavouritePage />} />
+          <Route path="/beersearch" element={<SearchPage />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </BrowserRouter>
+      <Footer />
     </div>
   );
 }

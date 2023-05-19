@@ -1,0 +1,214 @@
+.header {
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  height: 200px;
+  transition-timing-function: ease-in;
+  transition: 1s;
+  background-image: url("../../../assets/images/headerBackground.jpeg");
+  display: flex;
+  padding: 0 10px; 
+}
+
+.headerUp {
+  top: 0;
+}
+.headerDown {
+  top: -150px;
+}
+.header_homeLink{
+  min-width: 15%;
+  text-align: right;
+}
+  .searchAndLinks {
+    width: 100%;
+  max-width: 70%;
+
+margin: 0 auto;
+
+}
+.searchGroup {
+  width: 50%;
+  margin: 45px auto 70px;
+}
+
+
+.headerLinks {
+  display: flex;
+  justify-content: space-around;
+  min-width: 70%;
+  margin: auto 0;
+  box-sizing: border-box;
+  max-width: 1000px;
+}
+
+.headerLinks a {
+  font-family: BebasKai, serif;
+  padding: 5px;
+  color: #cab02d;
+  text-decoration: none;
+  background-color: transparent;
+  outline: none;
+  display: inline-block;
+  text-align: center;
+  height: 100%;
+  width: 35%;
+  border-radius: 5%;
+
+}
+.headerLinksUp a {
+  font-size: 30px;
+}
+
+.headerLinksDown a {
+  font-size: 25px;
+  padding: 7px;
+}
+.homePageIcon {
+  height: 130px;
+  padding: 5px;
+  margin: 0px 0px 15px 60px;
+  transition-timing-function: ease-in;
+  transition: 0.5s;
+}
+.homePageIcon:hover {
+  border: none;
+  border-radius: 20%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.homePageIconUp {
+  margin-top: 30px;
+}
+.homePageIconDown {
+  margin-top: 10px;
+}
+
+
+
+.headerLinks a:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+
+
+
+@media screen and (max-width: 820px) {
+  .homePageIcon {
+    height: 130px;
+   
+    margin: 0px ;
+    margin-top: 30px ;
+
+
+    
+  }
+  .searchGroup {
+    width: 80%;
+    margin: 45px auto 70px;
+  }
+  
+  .searchAndLinks{
+    margin: 0px ;
+
+}
+
+
+
+.headerLinksUp a {
+  font-size: 24px;
+  padding: 9px 7px;
+
+}
+
+.headerLinksDown a {
+  font-size: 22px;
+  padding: 9px 7px;
+
+}
+}
+
+@media screen and (max-width: 500px) {
+  
+  .homePageIcon {
+    height: 100px;
+    margin-top: 30px ;
+
+  }
+  .searchAndLinks{
+    max-width: 300px;
+}
+
+.headerLinks a{
+    
+  width:auto;
+}
+
+.headerLinksUp a {
+  font-size: 22px;
+
+}
+
+.headerLinksDown a {
+  font-size: 20px;
+
+}
+
+}
+@media screen and (max-width: 450px) {
+
+  .headerLinks {
+    
+    max-width: 94%;
+  }
+
+.searchGroup {
+width: 80%;
+margin: 30px auto 36px;
+}
+}
+@media screen and (max-width: 380px) {
+  
+  .homePageIcon {
+    height: 80px;
+    margin-top: 50px ;
+
+  }
+  .searchAndLinks{
+    max-width: 70%;
+    margin-left: -15px;
+
+}
+
+
+.headerLinksUp a {
+  font-size: 18px;
+  padding: 12px 7px
+}
+
+.headerLinksDown a {
+  font-size: 16px;
+  padding: 12px 7px
+
+}
+
+}
+@media screen and (max-width: 300px) {
+  
+  .headerLinks {
+    
+    max-width: 90%;
+  }
+  
+
+.headerLinksUp a {
+  font-size: 17px;
+
+}
+
+.headerLinksDown a {
+  font-size: 16px;
+}
+
+}

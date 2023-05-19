@@ -1,0 +1,138 @@
+.beerItem {
+  width: 190px;
+  height: 300px;
+  background-color: rgb(236, 234, 234);
+  cursor: pointer;
+  margin: 30px 20px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  border: 2px solid #cab02d;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.beerItem a {
+  font-family: BebasKai, serif;
+  font-size: 18px;
+  text-decoration: none;
+  color: #cab02d;
+  text-overflow: ellipsis;
+}
+
+.beerItem:hover {
+  opacity: 0.7;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.beerItemImage {
+  height: 150px;
+  margin: 10px;
+}
+
+.favouriteButton {
+  margin-bottom: 10px;
+  color: white;
+}
+
+.beerItem_record {
+  color: rgb(154, 156, 128);
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+
+
+@media screen and (max-width: 1000px) {
+  .beerItem {
+    width: 150px;
+    height: 250px;
+    margin: 25px 10px;
+  }
+  .beerItem a {
+    font-size: 16px;
+  }
+  .beerItemImage {
+    height: 100px;
+  }
+  .favouriteButton {
+    margin-bottom: 7px;
+  }
+  .beerItem_record {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .beerItem {
+    width: 120px;
+    height: 230px;
+    margin: 15px 5px;
+  }
+  .beerItem a {
+    font-size: 14px;
+  }
+  .beerItemImage {
+    height: 70px;
+  }
+  .favouriteButton {
+    margin-bottom: 7px;
+  }
+  .beerItem_record {
+    font-size: 13px;
+  }
+
+}
+
+@media screen and (max-width: 500px) {
+
+  .beerItem {
+    width: 100px;
+    height: 200px;
+    margin: 10px 5px;
+  }
+
+  .beerItem a {
+    font-size: 14px;
+  }
+
+
+  .beerItemImage {
+    height: 60px;
+  }
+
+  .favouriteButton {
+    margin-bottom: 5px;
+  }
+
+  .beerItem_record {
+    font-size: 12px;
+  }
+
+}
+
+@media screen and (max-width: 400px) {
+
+  .beerItem {
+    width: 90px;
+    height: 200px;
+    margin: 6px 3px;
+  }
+
+  .beerItem a {
+    font-size: 13px;
+  }
+
+
+  .beerItemImage {
+    height: 50px;
+  }
+
+  .favouriteButton {
+    margin-bottom: 4px;
+  }
+
+  .beerItem_record {
+    font-size: 11px;
+  }
+}

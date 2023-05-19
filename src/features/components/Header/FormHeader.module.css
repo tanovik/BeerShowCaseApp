@@ -1,0 +1,60 @@
+.searchGroupStartPage {
+  display: flex;
+  justify-content: center;
+  align-content: flex-start;
+}
+
+.searchGroupStartPage button {
+  border-radius: 0px 10px 10px 0px;
+  border-left: 1px solid #cab02d;
+}
+
+.searchInputStartPage {
+  min-width: 60%;
+  padding: 10px;
+  border: 2px solid #cab02d;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-right: 1px solid #cab02d;
+  background-color: #eeeeee;
+  font-family: BebasKai, serif;
+  font-size: 15px;
+  color: #cab02d;
+}
+
+input:focus {
+  outline: none;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:focus {
+  transition: background-color 600000s 0s, color 600000s 0s;
+}
+
+
+@media screen and (max-width: 1000px) {
+
+  .searchInputStartPage {
+    min-width: 80%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .searchGroupStartPage {
+    display: block;
+    margin-top: 10px
+  }
+
+  .searchGroupStartPage button {
+    min-width: 95%;
+    border-radius: 10px;
+  }
+
+  .searchInputStartPage {
+    min-width: 95%;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    max-width: 95%;
+  }
+
+}

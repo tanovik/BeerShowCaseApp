@@ -1,0 +1,173 @@
+.beerCardPage {
+  margin-bottom: 100px;
+  padding: 220px 20px 100px;
+  background-image: url("../../../../assets/images/background.jpeg");
+
+}
+
+.beerCardPage_wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  border: 2px solid #cab02d;
+  border-radius: 15px;
+  padding: 30px;
+  -webkit-box-shadow: -4px 6px 86px 9px rgba(0, 0, 0, 0.41);
+  -moz-box-shadow: -4px 6px 86px 9px rgba(0, 0, 0, 0.41);
+  box-shadow: -4px 6px 86px 9px rgba(0, 0, 0, 0.41);
+  justify-content: center;
+}
+
+.beerIconContainer {
+  max-width: 450px;
+  min-width: 300px;
+  height: 450px;
+  margin: 35px;
+  background-color: rgb(243, 242, 242);
+  border: 2px solid #cab02d;
+  border-radius: 15px;
+  text-align: center;
+  padding: 25px;
+
+
+
+}
+
+.beerIconContainer img {
+  height: 90%;
+
+}
+
+.beerInfo {
+  width: 50%;
+  text-align: left;
+  font-family: "HelveticaNeue";
+  color: gray;
+  margin: 35px;
+}
+
+.beerNameAndButton {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+
+}
+
+.beerInfo table {
+  border: none;
+}
+
+.beerInfo th {
+  font-weight: bold;
+}
+
+.beerInfo td {
+  padding-left: 100px;
+}
+
+.beerDescription {
+  text-indent: 20px;
+  text-align: justify;
+  margin-bottom: 15px;
+}
+
+.beerNameText {
+  font-family: "BebasKai", serif;
+  font-size: 40px;
+  color: gray;
+}
+
+
+@media screen and (max-width: 1000px) {
+  .beerCardPage_wrapper {
+    max-width: 90%;
+    padding: 25px;
+  }
+
+  .beerIconContainer {
+    max-width: 400px;
+    min-width: 200px;
+  }
+
+  .beerIconContainer img {
+    height: 90%;
+
+  }
+
+  .beerInfo {
+    font-size: 14px;
+    padding-right: 20px;
+
+  }
+
+  .beerInfo td {
+    padding-left: 30px;
+  }
+
+
+}
+
+@media screen and (max-width: 650px) {
+
+
+  .beerIconContainer {
+    max-width: 300px;
+    min-width: 150px;
+    padding: 0;
+
+  }
+
+  .beerIconContainer img {
+    height: 80%;
+    padding-top: 20px;
+  }
+
+  .beerInfo {
+    font-size: 12px;
+    padding-right: 10px;
+
+  }
+
+  .beerInfo td {
+    padding-left: 20px;
+  }
+
+  .beerNameText {
+    font-size: 30px;
+  }
+
+}
+
+@media screen and (max-width: 550px) {
+  .beerCardPage {
+    padding: 200px 0px 100px;
+  }
+
+  .beerCardPage_wrapper {
+    width: 100%;
+    max-width: 100%;
+    padding: 25px 5px;
+    flex-direction: column;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  .beerIconContainer {
+    height: 300px;
+    max-width: 80%;
+    min-width: 200px;
+    margin: 0 auto 20px;
+  }
+
+
+
+  .beerInfo {
+    width: 90%;
+    padding: 10px;
+    margin: 0 auto;
+  }
+
+
+}

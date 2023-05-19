@@ -1,39 +1,40 @@
-.App {
-  text-align: center;
+h1 {
+  font-size: 56px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h2 {
+  font-size: 40px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-float infinite 3s ease-in-out;
-  }
+h3 {
+  font-size: 32px;
 }
 
-.App-header {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+h4 {
+  font-size: 24px;
 }
 
-.App-link {
-  color: rgb(112, 76, 182);
+p {
+  font-size: 16px;
 }
 
-@keyframes App-logo-float {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(10px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
+
+.button_default_gray {
+  height: 42px;
+  min-width: 100px;
+  font-family: "BebasKai";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  background-color: #eeeeee;
+  color:  #cab02d;
+  border-radius: 10%;
+  transition: .2s ease-in;
+  border: 2px solid #cab02d;
+}
+
+.button_default_gray:hover {
+  cursor: pointer;
+  background-color:#979696;
+  color: #d1d0c7;
 }
