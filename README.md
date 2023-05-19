@@ -1,46 +1,42 @@
-# Getting Started with Create React App
+# Beer App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) TS template.
+<br/>
 
-## Available Scripts
+### Демо можно посмотреть [тут](https://tanovik.github.io/BeerShowCaseApp/)
 
-In the project directory, you can run:
+<br/>
 
-### `npm start`
+## Приложение представляет собой коллекцию с различными сортами пива в виде SPA.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+При первоначальной загрузке делает запрос на api (punkapi.com), которое возвращает все виды пива.
+Это приложение создано с целью демонстрации умения работы с React / Redux / typescript. Применена архитектура FLUX. Для хранения глобального стейта использован Redux. 
+<br/>
+Все приложение написано с Typescript.
+<br/>
+Реализован фильтр по разным критериям (IBU, ABV, год выпуска, подходящие блюда ) с использованием Formik и хуков react-hook-form, который в зависимости от критерия делает соответствующий запрос. Фильтр по имени возвращает все сорта пива, соответствующие частичным строкам, поэтому, например, IPA вернет Juniper Wheat Beer – такие особенности сервера. Имеется синхронизация адресной строки и запроса на сервер, есть пагинатор, слайдеры, реализовано добавление в избранное на хуках. Запросы выполняются с помощью axios, используется React Router.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+<br/>
 
-### `npm test`
+### Стек технологий:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+<br/>
+React
+<br/>
+Redux 
+<br/>
+React-Redux 
+<br/>
+TypeScript
+<br/>
+React-Router-Dom
+<br/>
+Axios
+<br/>
+REST API
+<br/>
+Formik
+<br/>
+React Hook Form
+<br/>
+Antd
+<br/>
