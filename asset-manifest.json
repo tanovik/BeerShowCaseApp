@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/BeerShowCaseApp/static/css/main.947848b6.css",
+    "main.js": "/BeerShowCaseApp/static/js/main.2df62731.js",
+    "static/media/HomePageBanner2.png": "/BeerShowCaseApp/static/media/HomePageBanner2.50c83cfa4f8853ceb119.png",
+    "static/media/HomePageBanner1.png": "/BeerShowCaseApp/static/media/HomePageBanner1.24f186a3a533c754b13f.png",
+    "static/media/HomePageBanner3.png": "/BeerShowCaseApp/static/media/HomePageBanner3.4183e1a980160bd272d3.png",
+    "static/media/allBeer.png": "/BeerShowCaseApp/static/media/allBeer.25d837ff36235a012a92.png",
+    "static/media/beerBottleIcon.png": "/BeerShowCaseApp/static/media/beerBottleIcon.8a767dd4d87711f7aa00.png",
+    "static/media/background.jpeg": "/BeerShowCaseApp/static/media/background.f0eec6aa3c8f6dfc0e4a.jpeg",
+    "static/media/headerBackground.jpeg": "/BeerShowCaseApp/static/media/headerBackground.bd863fa9b1db6570e99b.jpeg",
+    "static/media/BebasKai.ttf": "/BeerShowCaseApp/static/media/BebasKai.6d02e3d2de8c0e16c47e.ttf",
+    "static/media/beersHorizontal.jpg": "/BeerShowCaseApp/static/media/beersHorizontal.94ceffda1f888239ee99.jpg",
+    "static/media/HelveticaNeue.ttf": "/BeerShowCaseApp/static/media/HelveticaNeue.d2d64b7be8d49d3bcc2b.ttf",
+    "static/media/twitterIcon.png": "/BeerShowCaseApp/static/media/twitterIcon.c0363983a1dc3d4118b6.png",
+    "static/media/HomePageIcon.png": "/BeerShowCaseApp/static/media/HomePageIcon.10eac91dfb5de34fcf3e.png",
+    "static/media/instagramIcon.png": "/BeerShowCaseApp/static/media/instagramIcon.a49eed9ed9ef64fea3be.png",
+    "index.html": "/BeerShowCaseApp/index.html",
+    "main.947848b6.css.map": "/BeerShowCaseApp/static/css/main.947848b6.css.map",
+    "main.2df62731.js.map": "/BeerShowCaseApp/static/js/main.2df62731.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.947848b6.css",
+    "static/js/main.2df62731.js"
+  ]
+}
